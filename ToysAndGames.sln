@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToysAndGames.Api", "ToysAndGames.Api\ToysAndGames.Api.csproj", "{BD6542F2-FCA6-42BC-9C70-00A0E00B12DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToysAndGames.Infrastructure", "ToysAndGames.Infrastructure\ToysAndGames.Infrastructure.csproj", "{A96372A2-ADF0-4A1E-A5FB-8B356FA96338}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToysAndGames.Core", "ToysAndGames.Core\ToysAndGames.Core.csproj", "{BBA9C932-BFB4-4E60-944B-00A97D5AAE6A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD6542F2-FCA6-42BC-9C70-00A0E00B12DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD6542F2-FCA6-42BC-9C70-00A0E00B12DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD6542F2-FCA6-42BC-9C70-00A0E00B12DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD6542F2-FCA6-42BC-9C70-00A0E00B12DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A96372A2-ADF0-4A1E-A5FB-8B356FA96338}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A96372A2-ADF0-4A1E-A5FB-8B356FA96338}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A96372A2-ADF0-4A1E-A5FB-8B356FA96338}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A96372A2-ADF0-4A1E-A5FB-8B356FA96338}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBA9C932-BFB4-4E60-944B-00A97D5AAE6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBA9C932-BFB4-4E60-944B-00A97D5AAE6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBA9C932-BFB4-4E60-944B-00A97D5AAE6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBA9C932-BFB4-4E60-944B-00A97D5AAE6A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
