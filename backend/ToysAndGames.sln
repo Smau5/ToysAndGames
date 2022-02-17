@@ -1,14 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToysAndGames.Api", "ToysAndGames.Api\ToysAndGames.Api.csproj", "{BD6542F2-FCA6-42BC-9C70-00A0E00B12DF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToysAndGames.Api", "src\ToysAndGames.Api\ToysAndGames.Api.csproj", "{BD6542F2-FCA6-42BC-9C70-00A0E00B12DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToysAndGames.Infrastructure", "ToysAndGames.Infrastructure\ToysAndGames.Infrastructure.csproj", "{A96372A2-ADF0-4A1E-A5FB-8B356FA96338}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToysAndGames.Infrastructure", "src\ToysAndGames.Infrastructure\ToysAndGames.Infrastructure.csproj", "{A96372A2-ADF0-4A1E-A5FB-8B356FA96338}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToysAndGames.Core", "ToysAndGames.Core\ToysAndGames.Core.csproj", "{BBA9C932-BFB4-4E60-944B-00A97D5AAE6A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToysAndGames.Core", "src\ToysAndGames.Core\ToysAndGames.Core.csproj", "{BBA9C932-BFB4-4E60-944B-00A97D5AAE6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToysAndGames.UnitTests", "ToysAndGames.UnitTests\ToysAndGames.UnitTests.csproj", "{3CBB80F4-FC7A-4D41-8C80-0ADB98BDE9D7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToysAndGames.UnitTests", "tests\ToysAndGames.UnitTests\ToysAndGames.UnitTests.csproj", "{3CBB80F4-FC7A-4D41-8C80-0ADB98BDE9D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToysAndGames.IntegrationTests", "ToysAndGames.IntegrationTests\ToysAndGames.IntegrationTests.csproj", "{E7FCA3E2-3046-4B5F-95AD-B0B3EFB3A680}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToysAndGames.IntegrationTests", "tests\ToysAndGames.IntegrationTests\ToysAndGames.IntegrationTests.csproj", "{E7FCA3E2-3046-4B5F-95AD-B0B3EFB3A680}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{91250F9E-B293-45EE-8A34-9B381419320C}"
 EndProject

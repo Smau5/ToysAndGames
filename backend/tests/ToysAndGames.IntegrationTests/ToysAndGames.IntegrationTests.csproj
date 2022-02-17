@@ -23,7 +23,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\ToysAndGames.Api\ToysAndGames.Api.csproj" />
+      <ProjectReference Include="..\..\src\ToysAndGames.Api\ToysAndGames.Api.csproj" />
     </ItemGroup>
 
 </Project>
