@@ -11,7 +11,7 @@ public class ProductDto
     public int? AgeRestriction { get; set; }
     public string Company { get; set; } = string.Empty;
     public decimal Price { get; set; }
-    public Byte[]? Image { get; set; } 
+    public Byte[]? Image { get; set; }
 }
 
 public class ProductRequestDto

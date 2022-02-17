@@ -66,7 +66,17 @@ public class ProductsController : ControllerBase
     [HttpPut("{id}")]
     public async Task<ActionResult<ProductDto>> Update(int id, [FromBody] ProductRequestDto productRequestDto)
     {
-        var product = await _appDbContext.Products.FirstOrDefaultAsync(p => p.Id == id) ?? new Product();
+        var isCreated = false;
+        var product = await _appDbContext.Products.FirstOrDefaultAsync(p => p.Id == id);
+        if (product is null)
+        {
+            product = new Product();
+            // TODO: set the id from the request
+            // It throws identity column error 
+            // https://docs.microsoft.com/en-us/ef/core/providers/sql-server/value-generation#inserting-explicit-values-into-identity-columns
+            // product.Id = id;
+            isCreated = true;
+        }
 
         product.Company = productRequestDto.Company;
         product.Description = productRequestDto.Description;
@@ -74,7 +84,14 @@ public class ProductsController : ControllerBase
         product.Price = productRequestDto.Price;
         product.AgeRestriction = productRequestDto.AgeRestriction;
 
-        _appDbContext.Products.Update(product);
+        if (isCreated)
+        {
+            _appDbContext.Products.Add(product);
+        }
+        else
+        {
+            _appDbContext.Products.Update(product);
+        }
 
         await _appDbContext.SaveChangesAsync();
 
