@@ -2,7 +2,7 @@
 
 - Integration tests made with in memory db
 
-##Migrations
+## Migrations
 ### Generate a new migration
 
 ```
