@@ -1,6 +1,6 @@
 using AutoMapper;
-using ToysAndGames.Api.Models;
-using ToysAndGames.Core;
+using ToysAndGames.Data.Models;
+using ToysAndGames.DTOs;
 
 namespace ToysAndGames.Api.AutoMapperProfiles;
 

@@ -1,7 +1,7 @@
 using AutoMapper;
-using ToysAndGames.Api.AutoMapperProfiles;
-using ToysAndGames.Api.Models;
-using ToysAndGames.Core;
+
+using ToysAndGames.Data.Models;
+using ToysAndGames.DTOs;
 using Xunit;
 
 namespace ToysAndGames.UnitTests.Api.AutoMapperProfiles;

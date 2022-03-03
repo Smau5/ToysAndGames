@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using ToysAndGames.Infrastructure;
+using ToysAndGames.Services;
+using ToysAndGames.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,10 +18,18 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddAutoMapper(typeof(Program));
+builder.Services.AddScoped<IProductService, ProductService>();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+//TODO: Logic should not be in the controllers, lets move them to Services
+//TODO: Rename Infrastructure Proyect to Data and Include the Models there from Core to Data
+//TODO: Create autoStartup for DB Migrations
+//TODO: Create Configuration Files for Entities
+//TODO: Move Seed Data to HasData on the Data configuration Files
+
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

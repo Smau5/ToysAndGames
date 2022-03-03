@@ -1,5 +1,6 @@
 using System.Collections.Generic;
-using ToysAndGames.Core;
+
+using ToysAndGames.Data.Models;
 using ToysAndGames.Infrastructure;
 
 namespace ToysAndGames.IntegrationTests;
@@ -39,7 +40,6 @@ public static class SeedData
     public static void PopulateTestData(AppDbContext dbContext)
     {
         dbContext.Products.AddRange(Products());
-
         dbContext.SaveChanges();
     }
 }

@@ -3,7 +3,7 @@ using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using ToysAndGames.Api.Models;
+using ToysAndGames.DTOs;
 using Xunit;
 
 namespace ToysAndGames.IntegrationTests.Controllers.ProductsController;

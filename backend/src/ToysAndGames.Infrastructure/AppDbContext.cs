@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using ToysAndGames.Core;
+using ToysAndGames.Data.Models;
 
 namespace ToysAndGames.Infrastructure;
 
@@ -14,5 +14,6 @@ public class AppDbContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Product>().Property(p => p.Price).HasPrecision(14, 2);
+        //modelBuilder.Entity<Product>().HasData()
     }
 }

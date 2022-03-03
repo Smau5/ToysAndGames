@@ -18,12 +18,12 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\ToysAndGames.Core\ToysAndGames.Core.csproj" />
-      <ProjectReference Include="..\ToysAndGames.Infrastructure\ToysAndGames.Infrastructure.csproj" />
+        <InternalsVisibleTo Include="ToysAndGames.IntegrationTests" />
     </ItemGroup>
 
     <ItemGroup>
-        <InternalsVisibleTo Include ="ToysAndGames.IntegrationTests"/>
+      <ProjectReference Include="..\..\ToysAndGames.Services\ToysAndGames.Services.csproj" />
+      <ProjectReference Include="..\ToysAndGames.Infrastructure\ToysAndGames.Data.csproj" />
     </ItemGroup>
 
 </Project>

@@ -1,18 +1,25 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToysAndGames.Api", "src\ToysAndGames.Api\ToysAndGames.Api.csproj", "{BD6542F2-FCA6-42BC-9C70-00A0E00B12DF}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToysAndGames.Api", "src\ToysAndGames.Api\ToysAndGames.Api.csproj", "{BD6542F2-FCA6-42BC-9C70-00A0E00B12DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToysAndGames.Infrastructure", "src\ToysAndGames.Infrastructure\ToysAndGames.Infrastructure.csproj", "{A96372A2-ADF0-4A1E-A5FB-8B356FA96338}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToysAndGames.Data", "src\ToysAndGames.Infrastructure\ToysAndGames.Data.csproj", "{A96372A2-ADF0-4A1E-A5FB-8B356FA96338}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToysAndGames.Core", "src\ToysAndGames.Core\ToysAndGames.Core.csproj", "{BBA9C932-BFB4-4E60-944B-00A97D5AAE6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToysAndGames.Core", "src\ToysAndGames.Core\ToysAndGames.Core.csproj", "{BBA9C932-BFB4-4E60-944B-00A97D5AAE6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToysAndGames.UnitTests", "tests\ToysAndGames.UnitTests\ToysAndGames.UnitTests.csproj", "{3CBB80F4-FC7A-4D41-8C80-0ADB98BDE9D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToysAndGames.UnitTests", "tests\ToysAndGames.UnitTests\ToysAndGames.UnitTests.csproj", "{3CBB80F4-FC7A-4D41-8C80-0ADB98BDE9D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToysAndGames.IntegrationTests", "tests\ToysAndGames.IntegrationTests\ToysAndGames.IntegrationTests.csproj", "{E7FCA3E2-3046-4B5F-95AD-B0B3EFB3A680}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToysAndGames.IntegrationTests", "tests\ToysAndGames.IntegrationTests\ToysAndGames.IntegrationTests.csproj", "{E7FCA3E2-3046-4B5F-95AD-B0B3EFB3A680}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{91250F9E-B293-45EE-8A34-9B381419320C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A600CAF6-154C-4FD7-B328-86B14292B5A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToysAndGames.Services", "ToysAndGames.Services\ToysAndGames.Services.csproj", "{E09A9402-A138-4659-AF59-DD96F0C39903}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToysAndGames.DTOs", "ToysAndGames.DTOs\ToysAndGames.DTOs.csproj", "{D0472D66-4F2F-4849-A215-EEE33C38830A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,12 +47,28 @@ Global
 		{E7FCA3E2-3046-4B5F-95AD-B0B3EFB3A680}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7FCA3E2-3046-4B5F-95AD-B0B3EFB3A680}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7FCA3E2-3046-4B5F-95AD-B0B3EFB3A680}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E09A9402-A138-4659-AF59-DD96F0C39903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E09A9402-A138-4659-AF59-DD96F0C39903}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E09A9402-A138-4659-AF59-DD96F0C39903}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E09A9402-A138-4659-AF59-DD96F0C39903}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0472D66-4F2F-4849-A215-EEE33C38830A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0472D66-4F2F-4849-A215-EEE33C38830A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0472D66-4F2F-4849-A215-EEE33C38830A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0472D66-4F2F-4849-A215-EEE33C38830A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BD6542F2-FCA6-42BC-9C70-00A0E00B12DF} = {91250F9E-B293-45EE-8A34-9B381419320C}
-		{BBA9C932-BFB4-4E60-944B-00A97D5AAE6A} = {91250F9E-B293-45EE-8A34-9B381419320C}
 		{A96372A2-ADF0-4A1E-A5FB-8B356FA96338} = {91250F9E-B293-45EE-8A34-9B381419320C}
-		{E7FCA3E2-3046-4B5F-95AD-B0B3EFB3A680} = {A600CAF6-154C-4FD7-B328-86B14292B5A6}
+		{BBA9C932-BFB4-4E60-944B-00A97D5AAE6A} = {91250F9E-B293-45EE-8A34-9B381419320C}
 		{3CBB80F4-FC7A-4D41-8C80-0ADB98BDE9D7} = {A600CAF6-154C-4FD7-B328-86B14292B5A6}
+		{E7FCA3E2-3046-4B5F-95AD-B0B3EFB3A680} = {A600CAF6-154C-4FD7-B328-86B14292B5A6}
+		{E09A9402-A138-4659-AF59-DD96F0C39903} = {91250F9E-B293-45EE-8A34-9B381419320C}
+		{D0472D66-4F2F-4849-A215-EEE33C38830A} = {91250F9E-B293-45EE-8A34-9B381419320C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD6AF799-40A6-4AD0-B8EE-1B601D7B8DAA}
 	EndGlobalSection
 EndGlobal

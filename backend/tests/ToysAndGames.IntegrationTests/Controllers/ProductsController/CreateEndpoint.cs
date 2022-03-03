@@ -4,13 +4,15 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using ToysAndGames.Api.Models;
+using ToysAndGames.DTOs;
 using Xunit;
 
 namespace ToysAndGames.IntegrationTests.Controllers.ProductsController;
 
 public class CreateEndpoint : IClassFixture<ToysAndGamesApiFixture>
 {
+    //TODO: 1 File per controller its ok 
+    //TODO: ITestOutputhelper can help
     private readonly HttpClient _httpClient;
 
     public CreateEndpoint(ToysAndGamesApiFixture factory)

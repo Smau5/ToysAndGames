@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace ToysAndGames.Api.Models;
+namespace ToysAndGames.DTOs;
 
 public class ProductDto
 {
